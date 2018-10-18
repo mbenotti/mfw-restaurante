@@ -1,10 +1,42 @@
-/* Carousel Section*/
-.navbar-collapse {
-  background-color: darkgray;
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/* Carousel Section STARTS*/
+.nav li a:hover {
+  background-color: transparent;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff; /*color #fff is white*/
+  background-color: rgba(17,17,0.5);
+}
+.navbar-default .navbar-nav>li>a {
+  color: #fcfcfc; /*color is snow*/
+  text-shadow: 1px 1px 2px #0a0a0a; /*color is black*/
+}
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus {
+  color: #f8512f; /*color #f8512f is tomato*/
+  background-color: rgba(17, 17 ,17, 0.2);
+}
+nav.navbar {
+  position: absolute;
+  top: 100;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.wrap {
+  min-height: 100vh;
 }
 .carousel {
   margin-bottom: 60px;
-  height:600px;
+  height: 600px;
 }
 .carousel-caption {
   z-index: 10;
@@ -18,7 +50,7 @@
 }
 .main_img1 {
   background-image: url(../img/wood-2.jpg);
-  height; 600px;
+  height: 600px;
   width: 100%;
 }
 .main_img2 {
@@ -29,18 +61,85 @@
 }
 .main_logo {
   max-height: 300px;
-  margin-left: 28%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*added margin to to center*/
 }
 .btn-primary {
-  color: #fff;
-  background-color: #f8512f;
+  color: #fff; /*color #fff is white*/
+  background-color: #f8512f; /*color #f8512f is tomato*/
   border-color: transparent;
 }
 .btn-primary:hover {
-  background-color: #d34326;
+  background-color: #d34326; /*color #d34326 is chocolate - darker version of tomato*/
   border-color: transparent;
 }
 .carousel-caption p {
-  color: #f7f7f7;
+  color: #f7f7f7; /*color is whitesmoke*/
   font-size: 16px;
 }
+/*Our Story Styling*/
+#our_story, #menu, #review, #contact {
+  min-height: 600px;
+}
+#our_story .row {
+  margin-top: 30px;
+}
+#our_story h1 {
+  font-family: 'Lobster', cursive;
+  color: #f8512f;
+  font-size: 6em;
+  text-shadow: 1px 1px 5px #0a0a0a;
+}
+#our_story h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 0;
+}
+#our_story p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+.story-year {
+  font-family: 'Playfair Display', serif;
+  font-size: 200px;
+  font-weight: 700;
+  z-index: -1;
+  position: absolute;
+  bottom: 15px;
+  color: rgba(149,147,147,0.2);
+}
+/*Our Story Styling ENDS*/
+
+/*Review Styling STARTS*/
+#review {
+  background-image: url('../img/food_review.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#review .center {
+  margin: 0 auto;
+  float: none;
+  padding: 10px;
+  margin-top: 145px;
+  border-radius: 5px;
+  background-color: rgba(20,20,20,0.6);
+}
+#review h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 5em;
+  color: #f8512f; /*color is tomato*/
+  text-shadow: 1px 1px 5px #0a0a0a;
+}
+#review p {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  text-shadow: 1px 1px 5px #0a0a0a;
+}
+
+/*font-family: 'Lobster', cursive;
+font-family: 'Raleway', sans-serif;*/
