@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-/* Carousel Section STARTS*/
+/***********Carousel Section STARTS*************/
 .nav li a:hover {
   background-color: transparent;
 }
@@ -79,7 +79,8 @@ nav.navbar {
   color: #f7f7f7; /*color is whitesmoke*/
   font-size: 16px;
 }
-/*Our Story Styling*/
+/************Carousel Styling ENDS************/
+/**************Our Story Styling*************/
 #our_story, #menu, #review, #contact {
   min-height: 600px;
 }
@@ -88,7 +89,7 @@ nav.navbar {
 }
 #our_story h1 {
   font-family: 'Lobster', cursive;
-  color: #f8512f;
+  color: #f8512f; /*color is tomato*/
   font-size: 6em;
   text-shadow: 1px 1px 5px #0a0a0a;
 }
@@ -111,9 +112,9 @@ nav.navbar {
   bottom: 15px;
   color: rgba(149,147,147,0.2);
 }
-/*Our Story Styling ENDS*/
+/***************Our Story Styling ENDS***********/
 
-/*Review Styling STARTS*/
+/*************Review Styling STARTS*************/
 #review {
   background-image: url('../img/food_review.jpg');
   background-size: cover;
@@ -140,6 +141,49 @@ nav.navbar {
   font-size: 2em;
   text-shadow: 1px 1px 5px #0a0a0a;
 }
+/************Review Styling ENDS******************/
+/*************Menu Styling STARTS*****************/
+#menu {
+  background-image: url('../img/black_linen.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#menu h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 5em;
+  color: #fff; /*#fff color is white*/
+}
+#menu .container {
+  height: 500px;
+  border-top: 5px ridge #262626;/*#262626 DarkSlateGray*/
+  background-color: transparent;/*#fff; /*#fff color is white*/
+}
+#menu .nav-tabs, li, a {
+  margin-top: 7px;
+  font-weight: bold;
+  color: #f8512f; /*color is tomato*/
+  background-color: transparent;
+  border-color: transparent;
+}
+#menu .col-sm-3 {
+  height: 420px;
+  background-color: #fff; /*#fff color is white*/
+}
+#menu img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  border: 4px double lightgray;
+}
+#menu h3 {
+  font-weight: bold;
+}
+#menu p {
+  text-align: justify;
+}
+/*Menu Styling ENDS*/
 
 /*font-family: 'Lobster', cursive;
 font-family: 'Raleway', sans-serif;*/
