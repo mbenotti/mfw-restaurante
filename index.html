@@ -41,12 +41,12 @@
 	<div class="container-fluid wrap">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
-				<li data-target="myCarousel" data-slide-to="0" class="active"></li> <!--added active class to match Bootstrap-->
+				<li data-target="myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="myCarousel" data-slide-to="1"></li>
 				<li data-target="myCarousel" data-slide-to="2"></li>
 			</ol>
-		<div class="carousel-inner" role="listbox"> <!--role=listbox added-->
-			<div class="item main_img1 active"> <!--added active - img now shows-->
+		<div class="carousel-inner" role="listbox">
+			<div class="item main_img1 active">
 				<div class="carousel-caption">
 					<img src="img/logo-01.png" alt="Restaurante logo" class="img-responsive main_logo">
 				</div>
@@ -74,7 +74,6 @@
 		</a>
 		</div>
 	</div>
-
 
 <!-- END of CAROUSEL-->
 <!-- OUR STORY starts-->
@@ -268,5 +267,26 @@
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+              if( $(this).attr("href") =="#carousel-example-generic"
+                  || $(this).attr("href")=="#appetizer"
+                  || $(this).attr("href")=="#lunch"
+                  || $(this).attr("href")=="#dinner"
+                  || $(this).attr("href")=="#desserts") return; //These are the exceptions
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                      $('html,body').animate({
+                          scrollTop: target.offset().top
+                      }, 1000);
+                      return false;
+                  }
+              }
+          });
+      });
+	</script>
 </body>
 </html>
