@@ -196,7 +196,7 @@ nav.navbar {
 }
 #contact .contact-form {
   padding-top: 20px;
-  border: 2px solid #fff;
+  border: 4px double #fff;
   background-color: #f74623; /*#f74623 color is orangered*/
 }
 
