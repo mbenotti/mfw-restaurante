@@ -152,18 +152,22 @@ nav.navbar {
   font-family: 'Lobster', cursive;
   font-size: 5em;
   color: #fff; /*#fff color is white*/
+  border-bottom: 7px ridge #262626;/*#262626 DarkSlateGray*/
 }
 #menu .container {
-  height: 500px;
-  border-top: 5px ridge #262626;/*#262626 DarkSlateGray*/
+  height: 650px;
   background-color: transparent;/*#fff; /*#fff color is white*/
 }
-#menu .nav-tabs, li, a {
+#menu .nav li a {
   margin-top: 7px;
   font-weight: bold;
   color: #f8512f; /*color is tomato*/
   background-color: transparent;
   border-color: transparent;
+}
+#menu .nav .active {
+  background-color: #fff;
+  border-color: #fff;
 }
 #menu .col-sm-3 {
   height: 420px;
@@ -183,7 +187,20 @@ nav.navbar {
 #menu p {
   text-align: justify;
 }
-/*Menu Styling ENDS*/
+/************Menu Styling ENDS**************/
+/************Contact Styling STARTS***********/
+#contact .container-fluid {
+  background-color: #f8512f; /*#f8512f color is tomato*/
+  color: #fff;
+  height: 625px;
+}
+#contact .contact-form {
+  padding-top: 20px;
+  border: 4px double #fff;
+  background-color: #f74623; /*#f74623 color is orangered*/
+}
+
+/***********Contact Styling ENDS***********/
 
 /*font-family: 'Lobster', cursive;
 font-family: 'Raleway', sans-serif;*/

@@ -41,12 +41,12 @@
 	<div class="container-fluid wrap">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
-				<li data-target="myCarousel" data-slide-to="0" class="active"></li> <!--added active class to match Bootstrap-->
+				<li data-target="myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="myCarousel" data-slide-to="1"></li>
 				<li data-target="myCarousel" data-slide-to="2"></li>
 			</ol>
-		<div class="carousel-inner" role="listbox"> <!--role=listbox added-->
-			<div class="item main_img1 active"> <!--added active - img now shows-->
+		<div class="carousel-inner" role="listbox">
+			<div class="item main_img1 active">
 				<div class="carousel-caption">
 					<img src="img/logo-01.png" alt="Restaurante logo" class="img-responsive main_logo">
 				</div>
@@ -74,7 +74,6 @@
 		</a>
 		</div>
 	</div>
-
 
 <!-- END of CAROUSEL-->
 <!-- OUR STORY starts-->
@@ -108,12 +107,12 @@
 <!-- REVIEW section END-->
 
 <!-- MENU section STARTS-->
-<div id="menu" class="container-fluid">
-	<div class="row text-center">
-		<h1>Menu</h1>
-	</div>
+<div id="menu">
 	<div class="container">
-		<div class="row">
+		<div class="row text-center">
+			<h1>Menu</h1>
+		</div>
+		<div class="navbar">
 			<ul class="nav nav-tabs nav-justified" role="tablist">
 				<li role="presentation" class="active"><a href="#appetizer" aria-controls="appetizer" role="tab" data-toggle="tab">Appetizer</a>
 				</li>
@@ -124,36 +123,170 @@
 				<li role="presentation"><a href="#desserts" aria-controls="desserts" role="tab" data-toggle="tab">Desserts</a>
 				</li>
 			</ul>
-		</div>
-		<div class="row text-center">
-			<div class="col-xs-6 col-sm-3">
-				<img src="img/dip.jpg" alt="dip" class="img-responsive">
-				<h3>Appetizer 1</h3>
-				<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, natus, maiores porro voluptatum molestias unde iste, ea libero architecto deleniti earum nesciunt veniam cumque fugit?</p>
+		<div class="tab-content">
+			<div id="appetizer" class="tab-pane fade active in">
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/dip.jpg" alt="dip" class="img-responsive img-thumbnail">
+					<h3>Appetizer 1</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, natus, maiores porro voluptatum molestias unde iste, ea libero architecto deleniti earum nesciunt veniam cumque fugit?</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/eggplant.jpg" alt="eggplant appetizer" class="img-responsive img-thumbnail">
+					<h3>Appetizer 2</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit debitis maiores praesentium aut unde, rem, quaerat mollitia enim animi esse accusantium. Necessitatibus, consequatur non sunt magni aliquam modi delectus, hic.</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/meat.jpg" alt="meat appetizer" class="img-responsive img-thumbnail">
+					<h3>Appetizer 3</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, hic unde totam, iusto ducimus repellendus excepturi animi blanditiis eos eligendi id suscipit. Nisi nulla, alias quae?</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/bruschetta.jpg" alt="bruschetta appetizer" class="img-responsive img-thumbnail">
+					<h3>Appetizer 4</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, officiis molestiae, molestias reiciendis voluptas, voluptate alias error possimus quasi aliquam, nobis exercitationem obcaecati maxime?</p>
+				</div>
 			</div>
-			<div class="col-xs-6 col-sm-3">
-				<img src="img/eggplant.jpg" alt="eggplant appetizer" class="img-responsive">
-				<h3>Appetizer 2</h3>
-				<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit debitis maiores praesentium aut unde, rem, quaerat mollitia enim animi esse accusantium. Necessitatibus, consequatur non sunt magni aliquam modi delectus, hic.</p>
+			<div id="lunch" class="tab-pane fade in">
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/lunch1.jpg" alt="lunch 1" class="img-responsive img-thumbnail">
+					<h3>Lunch 1</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, natus, maiores porro voluptatum molestias unde iste, ea libero architecto deleniti earum nesciunt veniam cumque fugit?</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/lunch2.jpg" alt="lunch 2" class="img-responsive img-thumbnail">
+					<h3>Lunch 2</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit debitis maiores praesentium aut unde, rem, quaerat mollitia enim animi esse accusantium. Necessitatibus, consequatur non sunt magni aliquam modi delectus, hic.</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/lunch3.jpg" alt="lunch 3" class="img-responsive img-thumbnail">
+					<h3>Lunch 3</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, hic unde totam, iusto ducimus repellendus excepturi animi blanditiis eos eligendi id suscipit. Nisi nulla, alias quae?</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/lunch4.jpg" alt="lunch 4" class="img-responsive img-thumbnail">
+					<h3>Lunch 4</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, officiis molestiae, molestias reiciendis voluptas, voluptate alias error possimus quasi aliquam, nobis exercitationem obcaecati maxime?</p>
+				</div>
 			</div>
-			<div class="col-xs-6 col-sm-3">
-				<img src="img/meat.jpg" alt="meat appetizer" class="img-responsive">
-				<h3>Appetizer 3</h3>
-				<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, hic unde totam, iusto ducimus repellendus excepturi animi blanditiis eos eligendi id suscipit. Nisi nulla, alias quae?</p>
+			<div id="dinner" class="tab-pane fade in">
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/dinner1.jpg" alt="dinner 1" class="img-responsive img-thumbnail">
+					<h3>Dinner 1</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, natus, maiores porro voluptatum molestias unde iste, ea libero architecto deleniti earum nesciunt veniam cumque fugit?</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/dinner2.jpg" alt="dinner 2" class="img-responsive img-thumbnail">
+					<h3>Dinner 2</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit debitis maiores praesentium aut unde, rem, quaerat mollitia enim animi esse accusantium. Necessitatibus, consequatur non sunt magni aliquam modi delectus, hic.</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/dinner3.jpg" alt="dinner 3" class="img-responsive img-thumbnail">
+					<h3>Dinner 3</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, natus, maiores porro voluptatum molestias unde iste, ea libero architecto deleniti earum nesciunt veniam cumque fugit?</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/dinner4.jpg" alt="dinner 2" class="img-responsive img-thumbnail">
+					<h3>Dinner 4</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit debitis maiores praesentium aut unde, rem, quaerat mollitia enim animi esse accusantium. Necessitatibus, consequatur non sunt magni aliquam modi delectus, hic.</p>
+				</div>
 			</div>
-			<div class="col-xs-6 col-sm-3">
-				<img src="img/bruschetta.jpg" alt="bruschetta appetizer" class="img-responsive">
-				<h3>Appetizer 4</h3>
-				<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, officiis molestiae, molestias reiciendis voluptas, voluptate alias error possimus quasi aliquam, nobis exercitationem obcaecati maxime?</p>
+			<div id="desserts" class="tab-pane fade in">
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/dessert1.jpg" alt="dessert 1" class="img-responsive img-thumbnail">
+					<h3>Dessert 1</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, natus, maiores porro voluptatum molestias unde iste, ea libero architecto deleniti earum nesciunt veniam cumque fugit?</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/dessert2.jpg" alt="dessert 2" class="img-responsive img-thumbnail">
+					<h3>Dessert 2</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit debitis maiores praesentium aut unde, rem, quaerat mollitia enim animi esse accusantium. Necessitatibus, consequatur non sunt magni aliquam modi delectus, hic.</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/dessert3.jpg" alt="dessert 3" class="img-responsive img-thumbnail">
+					<h3>Dessert 3</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, natus, maiores porro voluptatum molestias unde iste, ea libero architecto deleniti earum nesciunt veniam cumque fugit?</p>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="img/dessert4.jpg" alt="dessert 2" class="img-responsive img-thumbnail">
+					<h3>Dessert 4</h3>
+					<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit debitis maiores praesentium aut unde, rem, quaerat mollitia enim animi esse accusantium. Necessitatibus, consequatur non sunt magni aliquam modi delectus, hic.</p>
+				</div>
 			</div>
 		</div>
 	</div>
+	</div>
 </div>
-
 <!-- MENU section ENDS-->
-
+<!-- Contact section STARTS-->
+<div id="contact">
+	<div class="container-fluid">
+		<div class="col-sm-8 col-sm-offset-1">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="text-uppercase">Contact Us</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-sm-offset-1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, expedita.</p>
+			</div>
+		</div>
+		<div class="row contact-bottom">
+			<div class="col-sm-4 col-sm-offset-1">
+					<div class="col-sm-12 contact-form">
+						<form action="">
+							<div class="form-group"><label for="name"><span>*Name:</span></label><input type="text" class="form-control" placeholder="Please provide first & last name">
+							</div>
+							<div class="form-group"><label for="email"><span>*Email:</span></label><input type="text" class="form-control" placeholder="email address">
+							</div>
+							<div class="form-group"><label for="subject"><span>*Subject:</span></label><input type="text" class="form-control" placeholder="brief description">
+							</div>
+							<div class="form-group"><label for="message"><span>*Message:</span></label><input type="text" class="form-control" placeholder="">
+							</div>
+							<div class="checkbox"><label for="checkbox"><input type="checkbox">I'm not a robot</input></label>
+							</div>
+							<button type="submit" class="btn btn-default center-block">Send Message</button>
+							<p class="text-center" id="content-fine-print">All fields marked * are mandatory</p>
+						</form>
+					</div>
+				</div>
+			<div class="col-sm-6 col-sm-offset-1">
+					<address><strong class="text-uppercase">restaurante</strong>
+						<br>123 Fulton St.
+						<br>Fresno, CA  93728
+						<br>P:559-555-5555
+						<br><br>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.609142008514!2d-119.78801758523453!3d36.731947279962725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise+South+Stadium!5e0!3m2!1sen!2sus!4v1540265809633" width="400" height="300" frameborder="0" style="border:4px double white" allowfullscreen></iframe>
+					</address>
+				</div>
+		</div>
+	</div>
+</div>
+<!-- Contact section ENDS-->
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>$(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+              if( $(this).attr("href") =="#myCarousel"
+                  || $(this).attr("href")=="#appetizer"
+                  || $(this).attr("href")=="#lunch"
+                  || $(this).attr("href")=="#dinner"
+                  || $(this).attr("href")=="#dessert") return; //These are the exceptions
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                      $('html,body').animate({
+                          scrollTop: target.offset().top
+                      }, 1000);
+                      return false;
+                  }
+              }
+          });
+      });
+
+	</script>
 </body>
 </html>
